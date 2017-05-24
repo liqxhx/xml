@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE classroom SYSTEM "classroom.dtd">
+<classroom id="c1">
+	<claName>10计算机应用技术</claName>
+	<grade>2010</grade>
+	<students>
+		<student>
+			<id>1</id>
+			<stuName>zhangsan</stuName>
+			<age>12</age>
+		</student>
+		<student>
+			<id>2</id>
+			<stuName>lisi</stuName>
+			<age>122</age>
+		</student>
+	</students>
+</classroom>

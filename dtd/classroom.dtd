@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT classroom (claName,grade,students)>
+<!ATTLIST classroom id ID #REQUIRED>
+<!ELEMENT claName (#PCDATA)>
+<!ELEMENT grade (#PCDATA)>
+<!ELEMENT students (student+)>
+<!ELEMENT student (id,stuName,age)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT stuName (#PCDATA)>
+<!ELEMENT age (#PCDATA)>

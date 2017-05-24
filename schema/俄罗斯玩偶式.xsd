@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/RussionDoll"
+	xmlns:tns="http://www.example.org/RussionDoll" elementFormDefault="qualified">
+
+	<element name="books">
+		<complexType>
+		<!-- maxOccurs表示最大出现次数 -->
+			<sequence maxOccurs="unbounded">
+				<element name="book">
+					<complexType>
+						<sequence minOccurs="1" maxOccurs="unbounded">
+							<element name="title" type="string" />
+							<element name="content" type="string" />
+							<choice>
+								<element name="author" type="string" />
+								<element name="authors">
+									<complexType>
+										<all><!-- 每个元素只能出现一次 -->
+											<element name="author" type="string"/>
+										</all>
+									</complexType>
+								</element>
+							</choice>
+						</sequence>
+						<attribute name="id" type="int" use="required"/>
+					</complexType>
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+
+</schema>

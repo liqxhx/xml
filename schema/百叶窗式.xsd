@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+		targetNamespace="http://www.example.org/VenetianBlind" 
+		xmlns:tns="http://www.example.org/VenetianBlind" 
+		elementFormDefault="qualified">
+		
+	<element name="person" type="tns:personType"/>
+	
+	<complexType name="personType">
+		<sequence>
+			<element name="name" type="string"/>
+			<element name="age" type="tns:ageType"/>
+			<element name="email" type="tns:emailType"/>
+		</sequence>
+		<attribute name="sex" type="tns:sexType"/>
+	</complexType>
+	
+	<simpleType name="emailType">
+		<restriction base="string">
+			<pattern value="(\w+\.*)*\w+@\w+\.[A-Za-z]{2,6}"/>
+			<minLength value="6"/>
+			<maxLength value="255"/>
+		</restriction>
+	</simpleType>
+	
+	<simpleType name="ageType">
+		<restriction base="int">
+			<minInclusive value="1"/>
+			<maxExclusive value="150"/>
+		</restriction>
+	</simpleType>
+	
+	<simpleType name="sexType">
+		<restriction base="string">
+			<enumeration value="男"/>
+			<enumeration value="女"/>
+		</restriction>
+	</simpleType>
+</schema>
