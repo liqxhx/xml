@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<filter>
+	<rule id="1" name="test">
+		<conditions>
+			<property name="objectType" 				type="string" 	op="equals" 		value="BSC"/> 
+			<property name="objectName" 				type="string" 	op="equals" 		value="aaa"/>
+			<property name="unifyFlag" 					type="boolean" 					op="==" 				value="true"/>
+		</conditions>
+		<operation><![CDATA[#1 && #2 && #3]]></operation>
+		<result value="name1"/>
+	</rule>
+	
+		<rule id="2" name="tes2t">
+			<conditions>
+				<property name="objectType" 	type="java.lang.String" 	op="equals" 		value="RNC"/> 
+				<property name="objectName" 	type="java.lang.String" 	op="contains" 	value="aa"/>
+				<property name="unifyFlag" 		type="boolean" 					op="==" 				value="true"/>
+			</conditions>
+			<operation><![CDATA[( #1 && #2 ) || #3]]></operation>
+		<result value="name2"/>
+	</rule>
+</filter>
