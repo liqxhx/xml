@@ -1,0 +1,24 @@
+	<opDetail>
+		<recordInfo>
+			<fieldInfo>
+				<fieldChName>网管告警流水号</fieldChName>
+				<fieldEnName>alarmId</fieldEnName>
+				<fieldContent>告警监控_1282632712859</fieldContent>
+			</fieldInfo>
+			<fieldInfo>
+				<fieldChName>派发工单号</fieldChName>
+				<fieldEnName>sheetNo</fieldEnName>
+				<fieldContent>ID-1282632712859</fieldContent>
+			</fieldInfo>
+			<fieldInfo>
+				<fieldChName>工单状态</fieldChName>
+				<fieldEnName>sheetStatus</fieldEnName>
+				<fieldContent>二级处理中</fieldContent>
+			</fieldInfo>
+			<fieldInfo>
+				<fieldChName>工单状态时间</fieldChName>
+				<fieldEnName>statusTime</fieldEnName>
+				<fieldContent>2010-08-24 16:20:00</fieldContent>
+			</fieldInfo>
+	</recordInfo>
+	</opDetail>
